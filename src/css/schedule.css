@@ -1,0 +1,248 @@
+.calendar_main {
+  border: 1px solid rgb(192, 192, 192);
+  font-size: 13px;
+}
+
+table {
+  clear: none;
+  text-indent: initial;
+  display: table;
+  /* border-spacing: 2px; */
+  border-color: grey;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+.calendar_corner_inner {
+  position: absolute;
+  inset: 0px;
+  border-right: 1px solid rgb(192, 192, 192);
+  border-bottom: 1px solid rgb(192, 192, 192);
+  color: rgb(51, 51, 51);
+  background: rgb(243, 243, 243);
+}
+
+.calendar_colheader_inner {
+  position: absolute;
+  inset: 0px;
+  border-right: 1px solid rgb(192, 192, 192);
+  border-bottom: 1px solid rgb(192, 192, 192);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: rgb(51, 51, 51);
+  background: rgb(243, 243, 243);
+}
+
+.calendar_cornerright_inner {
+  position: absolute;
+  inset: 0px;
+  border-bottom: 1px solid rgb(192, 192, 192);
+  color: rgb(51, 51, 51);
+  background: rgb(243, 243, 243);
+}
+
+td {
+  display: table-cell;
+  vertical-align: inherit;
+}
+
+.paint_cell {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.calendar_rowheader_inner {
+  font-size: 16pt;
+  text-align: right;
+  position: absolute;
+  inset: 0px;
+  border-right: 1px solid rgb(192, 192, 192);
+  border-bottom: 1px solid rgb(192, 192, 192);
+  padding: 3px;
+
+  color: rgb(51, 51, 51);
+  background: rgb(243, 243, 243);
+}
+
+.calendar_rowheader_minutes {
+  font-size: 10px;
+  vertical-align: super;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.calendar_cell_inner {
+  position: absolute;
+  inset: 0px;
+  border-right: 1px solid rgb(221, 221, 221);
+  border-bottom: 1px solid rgb(221, 221, 221);
+  background: rgb(249, 249, 249);
+}
+
+.calendar_event_inner {
+  position: absolute;
+  overflow: hidden;
+  inset: 0px;
+  padding: 2px 2px 2px 8px;
+  font-size: 13px;
+
+  background: -webkit-linear-gradient(top,
+      rgb(255, 255, 255) 0%,
+      rgb(238, 238, 238));
+}
+
+.calendar_event_bar {
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 6px;
+  background-color: rgb(157, 200, 232);
+}
+
+.calendar_event_bar_inner {
+  position: absolute;
+  width: 6px;
+  background-color: rgb(16, 102, 168);
+}
+
+.container_banner {
+  margin: 0 90px;
+  height: 450px;
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+}
+
+.banner_info {
+  margin-left: 50px;
+}
+
+.banner_info h1 {
+  margin-top: 1.5rem;
+  font-size: 4rem;
+  font-weight: bold;
+  color: rgb(8, 8, 53);
+}
+
+.banner_info p {
+  font-size: 1.3rem;
+}
+
+.banner_info div a {
+  border: none;
+  outline: none;
+  color: #EA4335;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 40px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 2px solid #EA4335;
+  text-decoration: none;
+}
+
+.banner_info div a:hover {
+  background-color: #EA4335;
+  color: #fff;
+}
+
+.banner_image img {
+  width: 600px;
+  padding-left: 10%;
+}
+
+#content_schelude_main {
+  height: 490px;
+}
+
+@media screen and (max-width: 1600px) {
+  #content_schelude_main {
+    height: 490px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  #content_schelude_main {
+    height: 490px;
+  }
+}
+
+@media (max-width: 820px) {
+  #content_schelude_main {
+    height: 490px;
+  }
+}
+
+@media (max-width: 800px) {
+  #content_schelude_main {
+    height: 490px;
+  }
+
+  .container_banner {
+    /* background-color: red; */
+    margin: 0;
+    height: 300px;
+    display: flex;
+    /* grid-template-columns: 380px; */
+  }
+
+  .banner_info {
+    margin: 0 20px;
+  }
+
+  .banner_info h1 {
+    margin-top: 0rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(8, 8, 53);
+  }
+
+  .banner_info p {
+    font-size: 1.2rem;
+  }
+
+  .banner_info div a {
+    border: none;
+    outline: none;
+    color: #EA4335;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 2px solid #EA4335;
+    text-decoration: none;
+  }
+
+  .banner_info div a:hover {
+    background-color: #EA4335;
+    color: #fff;
+  }
+
+  .banner_image img {
+    width: 350px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+  #content_schelude_main {
+    height: 490px;
+  }
+}
